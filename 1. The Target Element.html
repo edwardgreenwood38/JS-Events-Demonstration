@@ -23,6 +23,7 @@
 
             // Attaching an onclick event handler
             div.onclick = function(e) {
+                console.log('event: ', e)
                 e.target.style.backgroundColor = 'lightblue'
 
                 // Let the browser finish rendering of background color before showing alert
