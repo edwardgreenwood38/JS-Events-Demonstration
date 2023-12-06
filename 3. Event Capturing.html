@@ -23,6 +23,7 @@
             let elems = document.querySelectorAll('div.wrap, .wrap p, .wrap a')
 
             function showTagName() {
+                console.log('tag name; ', this.tagName);
                 clear(this.tagName)
                 this.style.backgroundColor = 'chartreuse'
             }
@@ -34,6 +35,9 @@
                 }
                 else if (tagName == 'P') {
                     document.querySelector('.wrap a').style.backgroundColor = 'gray'
+                }
+                else if (tagName == 'A') {
+                    document.querySelector('.wrap a').style.backgroundColor = 'blue'
                 }
             }
             
